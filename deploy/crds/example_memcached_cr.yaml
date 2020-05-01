@@ -1,0 +1,10 @@
+apiVersion: morningsend.com/v1alpha1
+kind: Memcached
+metadata:
+  name: example-memcached
+  namespace: default
+spec:
+  # Add fields here
+  cluster_size: 5
+  image: memcached:1.6.5-alpine
+  memory_size: 64
